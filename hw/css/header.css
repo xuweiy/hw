@@ -1,0 +1,188 @@
+/*头部广告图*/
+.header>.chart{
+	position: relative;
+}
+.header>.chart>.ad{
+	width:100%;
+}
+.header>.chart>.delete{
+	position:absolute;
+	top:5px;
+	right:120px;
+	display:inline-block;
+	width:28px;
+	height:28px;
+	background:url(../img/page/icon1.png) 1px -382px;
+}
+/*导航栏*/
+.header>.nav{
+	display:flex;
+	justify-content:space-between;
+	
+}
+/*导航栏左边*/
+.header>.nav>.left{
+	margin:10px 0 10px 50px;
+	position:relative;
+}
+.header>.nav>div>a{
+	color:#a4a4a4;
+
+}
+.header>.nav>.left>span{
+	color:#a4a4a4;
+	padding:0 6px;
+}
+.header>.nav>.left>.dela{
+	display:inline-block;
+	border:6px solid transparent;
+	border-top:6px solid #999;
+	position:relative;
+	top:3px;
+	right:-1px;
+}
+.hide{
+	position:absolute;
+	width:180px;
+	height:300px;
+	left:687px;
+	z-index:5;
+	background:#fff;
+	text-align: center;
+	border:1px solid #EAEAEA;
+	box-sizing:border-box;
+	display:none;
+}
+.show{
+	display:block;
+}
+.hide>a{
+	display:block;
+	padding-top:15px;
+}
+.hide>a{
+	color:#3a3a3a;
+	font-size:12px;
+}
+.hide>a:hover{
+	color:red;
+}
+.QR-Code{
+	margin-top:20px;
+	border-top:1px solid #EAEAEA;
+}
+.QR-Code>img{
+	padding:20px 0;
+}
+.QR-Code>div>span{
+	display:inline-block;
+	color:#3a3a3a;
+	font-size:12px;
+	margin-left:40px;
+}
+.QR-Code>div>a{
+	color:#3a3a3a;
+	font-size:12px;
+}
+.QR-Code>div>a:hover{
+	color:red;
+}
+.nav>.left>.content:hover~.hide{
+	display:block;
+}
+.header>.nav>.left>a:hover{
+	color:red;
+}
+/*导航栏右边,购物车,登录注册*/
+.header>.nav>.right{
+	margin:20px 50px 10px 0px;
+	position: relative;
+}
+.header>.nav>.right>a{
+	padding-left:5px;
+}
+.header>.nav>.right>a:hover{
+	color:red;
+}
+.header>.nav>.right>span{
+	color:#a4a4a4;
+	padding-left:5px;
+}
+/*购物车背景图片定位*/
+.header>.nav>.right>.car{
+	display:inline-block;
+	width:18px;
+	height:20px;
+	background:url(../img/page/icon-common.png) 3px 7px;
+	cursor:pointer;
+}
+.shopping-cart{
+	position:absolute;
+	left:-110px;
+	width:400px;
+	height:200px;
+	background:#fff;
+	text-align: center;
+	border:1px solid #eaeaea;
+	z-index:5;
+	padding-top:20px;
+	display:none;
+}
+.shopping-cart>p{
+	color:#a4a4a4;
+	padding-top:10px;
+}
+.header>.nav>.right>.shopping:hover~.shopping-cart{
+	display:block;
+}
+/*导航栏商品搜索类*/
+.header>.nav-goods{
+	display:flex;
+	justify-content:space-between;
+}
+.header>.nav-goods>.logo{
+	margin:10px 0 10px 50px;
+}
+/*导航栏商品搜索类左边*/
+.header>.nav-goods>.left{
+	margin:10px 0 20px -160px;
+	
+}
+.header>.nav-goods>.left>a{
+	margin-left:15px;
+	box-sizing:border-box;
+	font-size:16px;
+	color:#3A3A3A;
+	line-height:40px;
+}
+.header>.nav-goods>.left>a:hover{
+	color:red;
+	border-bottom:3px solid red;
+}
+/*导航栏商品搜索类右边*/
+.header>.nav-goods>.right{
+	font-size:0;
+	margin:20px 50px 20px 0px;
+}
+.header>.nav-goods>.right>.textbox{
+	width:230px;
+	height:25px;
+	border:1px solid #ddd;
+	padding-left:10px;
+}
+.header>.nav-goods>.right>.textbox::placeholder{
+	color:#a4a4a4;
+}
+.header>.nav-goods>.right>.textbox:hover::placeholder{
+	color:red;
+}
+/*搜索背景图片定位*/
+.header>.nav-goods>.right>.search{
+	display:inline-block;
+	width:18px;
+	height:25px;
+	background:url(../img/page/icon-common.png) -3px -22px;
+	cursor:pointer;
+	position:relative;
+	top:7px;
+}
